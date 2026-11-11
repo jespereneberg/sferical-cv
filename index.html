@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jesper Eneberg – CV</title>
+<meta name="description" content="Jesper Eneberg – AI Platform & Cloud Infrastructure Engineer | Kubernetes, Hybrid Cloud & LLM Platforms | ex-AWS">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --text: #1d2125;
+    --muted: #5b6470;
+    --accent: #004f90;
+    --rule: #dde2e8;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #e6e9ec; --muted: #9aa4af; --accent: #6cb4ff; --rule: #2e353c; --bg: #14181c; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "Source Sans 3", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 52rem; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header { text-align: center; margin-bottom: 2rem; }
+  h1 { font-size: 2.4rem; margin: 0; letter-spacing: -0.01em; }
+  .headline { color: var(--muted); margin: 0.4rem 0 0.8rem; font-size: 1.05rem; }
+  .contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem 1.2rem; font-size: 0.95rem; }
+  .download { display: inline-block; margin-top: 1rem; padding: 0.4rem 1rem; border: 1px solid var(--accent); border-radius: 999px; font-size: 0.9rem; }
+  .download:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
+
+  h2 {
+    color: var(--accent);
+    font-size: 1.15rem;
+    margin: 2.2rem 0 0.8rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .entry { margin-bottom: 1.3rem; }
+  .entry-head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .entry-head .org { font-weight: 600; }
+  .entry-head .when { color: var(--muted); font-size: 0.92rem; white-space: nowrap; text-align: right; }
+  .role { font-style: italic; }
+  ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+  li { margin-bottom: 0.3rem; }
+  section > ul { padding-left: 1.2rem; }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    .entry-head .when { text-align: left; }
+  }
+  @media print {
+    :root { --text: #000; --muted: #444; --accent: #004f90; --rule: #ccc; --bg: #fff; }
+    body { font-size: 10pt; }
+    main { padding: 0; max-width: none; }
+    .download { display: none; }
+    .entry { break-inside: avoid; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Jesper Eneberg</h1>
+    <p class="headline">AI Platform &amp; Cloud Infrastructure Engineer | Kubernetes, Hybrid Cloud &amp; LLM Platforms | ex-AWS</p>
+    <div class="contact">
+      <span>Stockholm, Sweden</span>
+      <a href="mailto:jesper@eneberg.nu">jesper@eneberg.nu</a>
+      <a href="tel:+46730568262">+46 73 056 82 62</a>
+      <a href="https://www.linkedin.com/in/jespereneberg">linkedin.com/in/jespereneberg</a>
+    </div>
+    <a class="download" href="Jesper_Eneberg_CV.pdf">Download PDF</a>
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p>I am a hands-on cloud and AI platform engineer with 12+ years in infrastructure. I started out running Linux,
+    VMware and Cisco networks, spent nearly eight years at AWS working with the Nordics' largest operators,
+    manufacturers and defence companies, and today I build and run the cloud network and agentic AI platform behind
+    Saab's defence programs. That means serving open-weight models with vLLM, running sandboxed agents and getting code
+    into air-gapped environments. I enjoy owning a platform end to end, from design to troubleshooting. Native Swedish
+    speaker, based in Stockholm.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Sopra Steria</span>, <span class="role">Principal Cloud Architect &amp; Tech Lead</span></div>
+        <div class="when">May 2026 – present<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>Leading the AWS and tactical/rugged edge practice in Sweden, delivering solutions across cloud, edge and on-premises.</li>
+        <li>Running workshops and coaching teams on agentic AI, from agentic workflows and building a team of agents to the common pitfalls and how to get started.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Saab (client, via Sopra Steria)</span>, <span class="role">Principal Cloud Architect &amp; Network Lead</span></div>
+        <div class="when">June 2026 – present<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>I built the cloud and AI platform that 100+ developers across 10 high-stakes defence programs now work on, and I am cloud architecture lead on a ~$10B program. Onboarding a new team or account used to take weeks and now takes hours.</li>
+        <li>The agent harness runs on Amazon Bedrock AgentCore in the cloud and on Kubernetes on-premises. I built it with Strands Agents SDK and LangChain, with sandboxed agent execution, model evaluation and a shared skill and MCP repository so teams reuse agent tooling instead of rebuilding it.</li>
+        <li>All LLM traffic goes through one gateway with model-access controls, and models and agents are routed by data classification, export controls and use case. I host open-weight models such as GLM 5.3 Flash with vLLM on AWS GPU instances, and smaller models on NVIDIA DGX Spark and Mac mini next to hardware-in-the-loop rigs. Developers work agentically with OpenCode on top of it all.</li>
+        <li>Every agent has its own identity and can act on behalf of a user, access is zero trust through ZTNA (Zscaler, OpenZiti) and an identity-aware service network, and I report AI and cloud spend to the CDO and CFO.</li>
+        <li>Underneath sits a hub-and-spoke network on AWS Cloud WAN across 100+ AWS accounts and cloud environments, with Direct Connect (BGP) to on-premises data centers and Azure and centralized firewalls and ingress, all managed as policy as code with continuous compliance.</li>
+        <li>To get software into restricted environments, I set up self-hosted CI runners that build and test across cloud, on-premises and air-gapped environments, and data-diode transfers into classified networks.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Stealth Startup (social media app)</span>, <span class="role">Technical Advisor</span></div>
+        <div class="when">May 2026 – present<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>Acting as a CTO for non-technical founders, setting engineering practices and guiding the architecture, from keeping the app fast when the backend struggles (preloading, caching, request batching) to weighing performance against cost and single against multi-region.</li>
+        <li>I set up a multi-region Kubernetes platform with GitOps (Terraform, Argo CD and Helm) and regional failover, built to serve 1 million concurrent users worldwide.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Senior Solutions Architect, Public Sector &amp; Regulated Industries</span></div>
+        <div class="when">May 2025 – June 2026<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>I started the strategic partnership between AWS and a Swedish defence technology company and turned their and the Swedish government's requirements into a rugged, fully disconnected edge-to-cloud platform. I built its control and data plane on Kubernetes, with S3-compatible storage, VM compute and multi-layer encryption.</li>
+        <li>Running SLMs and AI inference on rugged in-field devices (AWS Snow and the defence company's edge product) for disconnected and low-latency environments.</li>
+        <li>Contributed to AWS becoming the first cloud provider approved for NATO RESTRICTED workloads.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Senior Solutions Architect, Digital Native &amp; Enterprise</span></div>
+        <div class="when">Oct 2024 – May 2025<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>For a critical national identity solution, I advised the CTO and lead architect on networking, security, availability and resiliency as they moved from on-premises to AWS and set up failover between the two.</li>
+        <li>For a pay-by-bank fintech, I migrated the main database to Amazon RDS and built a proof of concept for fraud and risk assessment on Kafka, Amazon Bedrock and in-house detection models.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Senior Global Telecommunications Solutions Architect</span></div>
+        <div class="when">May 2021 – Oct 2024<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>At a Tier-1 Nordic operator, I led the move of the on-premises Oracle and Hadoop estate to a company-wide serverless data and ML platform on S3, Redshift, Glue, Athena and SageMaker MLOps pipelines in under a year. I also advised on model evaluation and built PoCs for a generative AI project that described 87,000 data fields, saving 10,000 engineering hours and €700k.</li>
+        <li>I designed the hybrid network foundation at the same operator, with Direct Connect to all 100+ sites and a 400+ account landing zone that carried the migration of VMware, SAP S/4HANA and 500+ container, VM and serverless systems.</li>
+        <li>When a Tier-1 operator's mobile brand moved its complete mobile core to AWS, I advised the core provider's CTO on running it on Kubernetes with nested virtualization, Transit Gateway and overlay networking.</li>
+        <li>I integrated AWS edge devices with a Tier-1 operator's transportable private 5G network to control drones and autonomous vehicles for a national defence agency and a public broadcaster. With Ericsson and AWS edge service teams, I shaped a telco variant of a rugged AWS edge device and built Kubernetes on it (K3s and EKS Anywhere), both single-node and clustered.</li>
+        <li>When a global Tier-1 carrier separated from its parent operator, I guided an AWS partner in moving VMs to containers and serverless, legacy data to OpenSearch and Kafka, and building hybrid cloud in the carrier's own facilities.</li>
+        <li>For two Nordic operators, I built the demos, PoCs and prototypes for AI in customer service, from a generative AI assistant for IoT support agents (launched 2024) to an AI contact center with LLMs, speech-to-text, sentiment analysis, translation and real-time agent assist.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Solutions Architect</span></div>
+        <div class="when">Aug 2018 – May 2021<br>Stockholm, Sweden</div>
+      </div>
+      <ul>
+        <li>For a global car manufacturer's autonomous-driving program, I scaled the HPC and ML platform from 20k to 100k+ cores on Slurm and AWS Batch and led the global data ingestion over Direct Connect that moved hundreds of petabytes of sensor data into AWS.</li>
+        <li>I designed the IoT, edge compute and computer-vision architecture for a European battery manufacturer's connected factories and co-presented it with the customer at re:Invent two years in a row.</li>
+        <li>As the first Nordic member of AWS's networking Technical Field Community, I upskilled SAs, CSMs and TAMs on networking.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">DigitalRoute · Husqvarna Group · Swedish Board of Agriculture · EVRY</span>, <span class="role">Cloud Architect, DevOps Engineer, Team Lead, System Administrator</span></div>
+        <div class="when">May 2013 – Aug 2018<br>Sweden</div>
+      </div>
+      <ul>
+        <li>At DigitalRoute I moved the data-mediation product to Kubernetes-based SaaS on AWS with Terraform and CI/CD, and at Husqvarna I led the Cloud Platform team across AWS and Azure. Before that I ran RHEL, PostgreSQL and VMware platforms on a Cisco enterprise network.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Speaking &amp; Publications</h2>
+    <ul>
+      <li>AWS Public Sector Blog (2026), <em>How AWS and Expando help European governments protect data from the edge to the cloud</em></li>
+      <li>AWS re:Invent 2022 and 2023, <em>Become a network support expert: We break it, you fix it</em> and <em>Successfully manage overlapping IP address ranges</em></li>
+      <li>AWS re:Inforce 2022 and 2024 and SuriCon 2022 on network security, including my open-source IDS/IPS reference architecture for AWS Gateway Load Balancer (AWS blog, 2021)</li>
+      <li>Commvault SHIFT 2026, Stockholm, <em>Cloud resiliency</em>, and BreakIT Resilience Summit 2025</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certifications and Awards</h2>
+    <ul>
+      <li>Winner of the AWS Agentic AI Hackathon 2025 with an agentic AI for industrial operations, built in Python, that reads machine telemetry and then alerts, stops machines and orders spare parts on its own</li>
+      <li>Top-tier performance rating as AWS Senior Solutions Architect for three consecutive years (2023 to 2025)</li>
+      <li>Cisco CCNP and CCNA, plus AWS Advanced Networking and Solutions Architect Professional (lapsed)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-head">
+        <div><span class="org">Jönköping University</span>, <span class="role">Higher Education Diploma in Computer Networking Technology</span></div>
+        <div class="when">Aug 2010 – June 2013</div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
